@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'docker build -t my-flask-app .'
-        bat 'docker tag my_flask_app %DOCKER_BFLASK_IMAGE%'
+      //   bat 'docker tag my_flask_app %DOCKER_BFLASK_IMAGE%'
       }
     }
     stage('Test') {
